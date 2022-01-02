@@ -14,3 +14,5 @@ esac
 alias user="su -ls /bin/bash"
 
 alias v="ls -lA"
+
+. ~/.bashrc
