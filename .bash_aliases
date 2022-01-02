@@ -83,7 +83,7 @@ function dirsizes() {
 }
 
 # open tmux session by number
-function tses() {
+function tm() {
         tmux attach -t "$@"
 }
 
