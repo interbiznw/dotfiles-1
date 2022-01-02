@@ -16,3 +16,5 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 export EDITOR=/usr/bin/vim
 
+export LPATHS=/mnt/cache/appdata/UNRAID_CONFIG/paths
+
