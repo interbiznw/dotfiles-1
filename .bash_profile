@@ -15,4 +15,17 @@ alias user="su -ls /bin/bash"
 
 alias v="ls -lA"
 
+
+if [ -n "$TMUX" ]; then
+    # called inside tmux session, do tmux things
+    #for debugging: echo "known tmux session"
+    . ~/.profile
+else
+
+# Trigger ~/.bashrc commands
 . ~/.bashrc
+
+cat /mnt/cache/appdata/UNRAID_CONFIG/banner.txt
+
+
+fi
