@@ -8,10 +8,6 @@
 #printf '\n==============================\nTop 5 memory processes (col 4)\n==============================\n'
 #ps aux | sort -rk 4,4 | head -n 6
 
-# Reload the shell (i.e. invoke as a login shell with .bash_profile, which likely this file)
-# switch -l to -i if you just want to reload this file
-alias rebash="exec $SHELL -l"
-
 # Nano this file, .inputrc or .nanorc
 alias profile="sudo nano ~/.bashrc"
 alias input="sudo nano ~/.inputrc"
@@ -114,23 +110,10 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -141,6 +124,10 @@ if ! shopt -oq posix; then
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
   fi
+fi
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
 fi
 
 if [ -f ~/.bash_exports ]; then
