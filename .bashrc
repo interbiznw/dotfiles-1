@@ -143,6 +143,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -f $HOME/.bash_exports ]; then
-    . $HOME/.bash_exports
+if [ -f ~/.bash_exports ]; then
+    . ~/.bash_exports
 fi
