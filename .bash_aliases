@@ -82,3 +82,8 @@ function dirsizes() {
         sudo du -h -s *
 }
 
+# open tmux session by number
+function tses() {
+        tmux attach -t "$@"
+}
+
