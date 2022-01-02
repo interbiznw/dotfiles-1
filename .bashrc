@@ -142,3 +142,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -f $HOME/.bash_exports ]; then
+    . $HOME/.bash_exports
+fi
