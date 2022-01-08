@@ -105,6 +105,14 @@ if [ -f ~/.bash_exports ]; then
     . ~/.bash_exports
 fi
 
+
+
+
+if [ -f ~/.bash_wrappers ]; then
+    echo "adding bash_wrappers...."
+    . ~/.bash_wrappers
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
