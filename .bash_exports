@@ -1,5 +1,6 @@
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
-
+export EDITOR=/usr/bin/nano
 export LPATHS=/mnt/cache/appdata/UNRAID_CONFIG/paths
 
+echo "************** bash_exports done ******************"
