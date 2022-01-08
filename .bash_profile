@@ -12,10 +12,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-# impersonate a user
-alias user="su -ls /bin/bash"
-alias v="ls -lA"
-
 
 if [ -n "$TMUX" ]; then
     echo "Tmux session detected"
