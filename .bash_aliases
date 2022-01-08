@@ -86,4 +86,4 @@ function dirsizes() {
 function tm() {
         tmux attach -t "$@"
 }
-
+echo "************** bash_aliases done ******************"
